@@ -1,0 +1,41 @@
+.list-card {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-gap: 1rem;
+  grid-auto-flow: dense;
+}
+
+.item {
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 30px 0px rgba(229, 226, 246, 0.5019607843);
+  min-height: 9rem;
+  transition: all 0.35s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  &:hover {
+    transform: translateY(-6px);
+  }
+}
+
+a {
+  height: 5rem;
+  font-weight: 600;
+  color: #000;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  &:hover {
+    color: #f36523;
+  }
+}
+
+.description {
+  height: 3rem;
+}
+
+label {
+  margin-left: 20px;
+}

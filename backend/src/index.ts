@@ -1,5 +1,6 @@
 import express, { Request, Response } from 'express'
 import dotenv from 'dotenv'
+import cors from 'cors'
 
 import * as data from './data.json'
 
@@ -13,6 +14,7 @@ interface ApiResponse {
   forks: number
 }
 
+app.use(cors())
 app.get('/repos', async (req: Request, res: Response) => {
   try {
     // Rate limit
